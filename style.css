@@ -399,6 +399,16 @@ section .title::after{
 .teams .carousel .card:hover{
     background: #3B82F6;
 }
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;

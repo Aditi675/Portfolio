@@ -157,6 +157,7 @@
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="carousel owl-carousel">
+                <a href="https://fresh-finds-smart.lovable.app/auth" target="_blank" class="project-link">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-0.jpeg" alt="">
@@ -164,6 +165,8 @@
                         <p>Manages food inventory with smart notifications to prevent expiry and reduce waste.</p>
                     </div>
                 </div>
+                </a>
+                <a href="https://word-guessing-game-orcin.vercel.app/" target="_blank" class="project-link">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-5.jpeg" alt="">
@@ -171,6 +174,8 @@
                         <p>A fun and interactive word guessing game for all ages.</p>
                     </div>
                 </div>
+                </a>
+                <a href="https://calculator-two-navy-95.vercel.app/" target="_blank" class="project-link">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-3.jpeg" alt="">
@@ -178,6 +183,8 @@
                         <p>A simple calculator application for basic arithmetic operations.</p>
                     </div>
                 </div>
+                </a>
+                <a href="https://password-generator-omega-topaz.vercel.app/" target="_blank" class="project-link">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-4.jpeg" alt="">
@@ -185,6 +192,8 @@
                         <p>A secure password generator that creates strong, unique passwords for your accounts.</p>
                     </div>
                 </div>
+                </a>
+                <a href="https://weather-app-swart-eight-98.vercel.app/" target="_blank" class="project-link">
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-2.jpeg" alt="">
@@ -192,6 +201,7 @@
                         <p>Provides real-time weather updates and forecasts for any location.</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </section>
@@ -230,25 +240,34 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
+                    <form id="contact-form">
+    <div class="fields">
+        <div class="field name">
+            <input type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="field email">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+    </div>
+
+    <div class="field">
+        <input type="text" name="subject" placeholder="Subject" required>
+    </div>
+
+    <div class="field textarea">
+        <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message.."
+            required
+        ></textarea>
+    </div>
+
+    <div class="button-area">
+        <button type="submit">Send message</button>
+    </div>
+</form>
                 </div>
             </div>
         </div>
@@ -258,7 +277,7 @@
     <footer>
         <span>Made with ❤️ By Aditi | <span class="far fa-copyright"></span> 2026 All rights reserved.</span>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

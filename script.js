@@ -1,3 +1,6 @@
+emailjs.init({
+    publicKey: "7cfpFKLEGbjiNkQSz",
+});
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -70,4 +73,23 @@ $(document).ready(function(){
             }
         }
     });
+    
+    $("#contact-form").submit(function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_pvbev4a",
+        "template_sh0mtvc",
+        this
+    )
+    .then(function () {
+        alert("Message sent successfully!");
+        $("#contact-form")[0].reset();
+    })
+    .catch(function (error) {
+        alert("Failed to send message.");
+        console.error(error);
+    });
+});
+
 });
